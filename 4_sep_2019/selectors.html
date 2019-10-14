@@ -1,0 +1,296 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>simple selector</title>
+        <style>
+            h2{
+                color: red;
+                text-align: center;
+                border-style: dotted;
+                border-color: blue;
+                border-left-style:hidden;
+                border-right-style: hidden;
+                border-top-style: hidden
+            }
+            .highlights
+            {
+                font-size: 20px;
+                font-weight: bold;
+                font-style: italic;
+                background-color: white;
+                opacity: .6;
+            }
+            #MainpPoint
+            {
+                font-size: 24px;
+                font-weight: bold;
+                background-color: lightgray;
+                opacity: .7;
+                border-left: 5ps solid blue;
+            }
+            p,h1{
+                color: blue;
+                background-color: white;
+                text-align: center;
+            }
+            .select-all *{
+                background-color: #00ffff2e;
+            }
+            h3{
+                color: green;
+                text-align: center;
+            }
+            #box>ul{
+                background-color: yellow;
+            }
+            .mydiv+p{
+                background-color: red;
+            }
+            .precede p~ul{
+                background-color:orange; 
+            }
+            .target a[target]{
+                background-color: yellow;
+                text-align: center;
+            }
+            .targate_attributes a[target=_blank]{
+                background-color: red;
+            }
+            .targate_attributes a[target=_top]{
+                background-color: gray;
+            }
+            .titleAttribute img[title="image"]{
+                border: 5px solid yellow;
+            }
+            .titleAttribute p[title="max"]{
+                background-color:  yellow;
+            }
+            p[class^="all"]{
+                border: 2px solid green;
+            } 
+            p[class$="max"]{
+                border: 2px solid red;
+            }
+            p[class*="test"]{
+                border: 2px solid khaki;
+                background-color:lavender;
+            }
+            .afterselector::after
+            {
+                content: "I am new text added using after selector";
+                color: red;
+            }
+            .beforeselector::before{
+                content: "I am before text";
+                color: red;
+            }
+            .form input:checked{
+                height: 50px;
+                width: 50px;               
+            }
+            .form input:default{
+                box-shadow: 0 0 1px 1px red;
+            }
+            .form input:disabled{
+                box-shadow: 0 0 1px 1px green;
+            }
+            .emptyelement p:empty{
+                background: red;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+            }
+            .form input:enabled{
+                box-shadow: 0 0 1px 1px blue;
+            }
+            .childselector li:first-child{
+                color: red;
+                font-weight: 600;
+            }
+            .childselector li::first-letter{
+                color: blue;
+                font-weight: 600;
+                font-size: 20px;
+            }
+            .childselector ::first-line{
+                color: blueviolet;
+                font-size: 25px;
+            }
+            .firsttype p:first-of-type{
+                background-color: blueviolet;
+            }
+            .form input:focus{
+                background-color: aquamarine;
+            }
+            .form input:in-range{                
+                border: 4px dotted red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="select-all">
+            <h1>(*) selector</h1>
+            <h2>This selectors selects all the elements which are descendent of "select all class"  </h2>
+            <h3>Ex. .seleect-all *{color:red}</h3>
+            <p class="highlight">Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum </p>
+            <p class="highlights">Lorem ispum Lorem ispum Lorem ispum Lorem ispum Lorem ispum  </p>
+        </div>
+        <div id="box">
+            <h1>( #box>ul ) selector</h1>
+            <h2>This selector style all the direct p chlid element of #box selector.  </h2>
+            <ul>
+                <li>test1</li>
+                <ul>
+                    <li>child1</li>
+                    <li>child2</li>
+                    <li>child3</li>
+                </ul>
+                <li>test2</li>
+                <ul>
+                    <li>child1</li>
+                    <li>child2</li>
+                    <li>child3</li>
+                </ul>
+                <li>test3</li>
+                
+            </ul>
+            
+            <span>
+                <ul>
+                    <li>child1</li>
+                    <li>child2</li>
+                    <li>child3</li>
+                </ul>
+            </span>
+        </div>
+        <div>
+            <div class="mydiv">
+                <h1>( div+p )</h1>
+                <h2>This selector select and style the first P element after the div element</h2>
+            </div>
+            <p>Lorem ispum Lorem ispum Lorem ispum Lorem ispum</p>
+            <p>Lorem ispum Lorem ispum Lorem ispum Lorem ispum</p>
+        </div>
+        <div class="precede">
+                <h1>( .precede p~ul ) selector</h1>
+                <h2>This selectors selects and style ul  elements preceded by p element with the same parent"  </h2>
+            <ul>
+                <li>before_p</li>
+                <li>before_p</li>
+                <li>before_p</li>
+            </ul>
+            <p>P is preceded element of their ul child elements<br>This is P element</p>
+            <ul>
+                <li>predede_by_p</li>
+                <li>predede_by_p</li>
+                <li>predede_by_p</li>
+            </ul>
+            <ul>
+                <li>predede_by_p</li>
+                <li>predede_by_p</li>
+                <li>predede_by_p</li>
+            </ul>
+            <div>
+                <ul>
+                    <li>another_div1</li>
+                    <li>another_div2</li>
+                    <li>another_div3</li>
+                </ul>
+            </div>
+        </div>   
+        <div class="target">
+            <h1>( a[target] selector )</h1>
+            <h2>This selector select and style the anchor element if the target attribute is defined</h2>
+            <a href="www.w3schools.com">w3schools</a>
+            <a href="www.facebook.com" target="_blank">facebook</a>
+            <a href="www.google.com" target="_top">google</a>            
+        </div>     
+        <div class="targate_attributes">
+            <h1>( a[target=value] selector )</h1>
+            <h2>This selector selects and style the anchor element with the specific target attribute value</h2>
+            <a href="www.w3schools.com">w3schools</a>
+            <a href="www.facebook.com" target="_blank">facebook</a>
+            <a href="www.google.com" target="_top">google</a>           
+        </div>
+        <div class="titleAttribute"> 
+            <h1>( [title~=flower] ) selector</h1>
+            <h2>This selector selects an element which has title attribute contains the specific attribute value</h2>
+            <img src="D:\work\2019\sep_2019\2_sep_2019\Files\images\blue-gradient-abstract-background-empty-room_1258-4436.jpg" alt="text1" title="image" height="150" width="150">
+            <img src="D:\work\2019\sep_2019\2_sep_2019\Files\images\head-659652_960_720.png" alt="text" title="myimage" height="150" width="150">
+            <img src="D:\work\2019\sep_2019\2_sep_2019\Files\images\students-and-laptops.jpg" alt="text" height="150" width="150" title="image">
+            <div>
+                    <img src="D:\work\2019\sep_2019\2_sep_2019\Files\images\blue-gradient-abstract-background-empty-room_1258-4436.jpg" alt="text1" title="image" height="150" width="150">
+                    <img src="D:\work\2019\sep_2019\2_sep_2019\Files\images\head-659652_960_720.png" alt="text" title="myimage" height="150" width="150">
+                    <img src="D:\work\2019\sep_2019\2_sep_2019\Files\images\students-and-laptops.jpg" alt="text" height="150" width="150" title="image">
+            </div>
+            <p title="max">This is the text.</p>
+            <p>This is the text.</p>
+            <p title="max">This is the text.</p>
+        </div>
+        <div class="alltesting">
+            <h1>(tagname[class^=classname]) Selector</h1>
+            <h2>This selector select and style all p elements which have class name starting with specific substring ex. p[class^="all"]</p> </h2>
+            <p class="all">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+            <p class="setall">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+            <p class="allset">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+        </div>
+        <div class="alltesting">
+            <h1>(tagname[class*=classname]) Selector</h1>
+            <h2>This selector select and style all p elements which have class name with specific substring ex. p[class^="test"]</p> </h2>
+            <p class="setmax">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+            <p class="maximum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+            <p class="maximum">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+        </div>
+        <div class="allselect">
+            <h1>(tagname[class$=classname]) Selector</h1>
+            <h2>This selector select and style all p elements which have class name ending with specific substring ex. p[class^="max"]</p> </h2>
+            <p class="sendtestselect">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+            <p class="sendtext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>
+            <p class="sendtestselect">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus molestias pariatur tenetur unde corrupti, est ad quae adipisci quia aut nostrum officia placeat quibusdam obcaecati qui? Adipisci id dolore accusamus?</p>           
+        </div>
+        <div>
+            <h1>( p::after ) selector </h1>
+            <h2>This selector add the content after selected element value </h2>
+            <p class="afterselector">insert text using after selector::</p>
+        </div>
+        <div>
+            <h1>( p::before ) selector </h1>
+            <h2>This selector add the content before selected element value </h2>
+            <p class="beforeselector">::insert text using after selector</p>
+        </div>
+        <div class="form">
+            <h1>( input:checked & input:default & input:disabled ) selectors</h1>
+            <h2>input:checked selector select and style elements those are checked.<br>input:default selector select and style elements those have default attribute.<br>input:disabled selector select and style elements those are disabled .</h2>
+            <form action="">
+                <input type="number" name="name" min="6" max="9" value="8">
+                <input type="text" name="fname">
+                <input type="radio" name="radiobtn" value="male" checked>
+                <input type="radio" name="radiobtn" value="female" disabled>
+                <input type="checkbox" name="checkbox" value="1">
+                <input type="checkbox" name="checkbox" value="2">
+            </form>
+        </div>
+        <div class="emptyelement">
+            <h1>( p:empty ) selector</h1>
+            <h2>This selector select and style the elements those have no values or empty.</h2>
+            <p></p>
+            <p>I have text.</p>
+        </div>
+        <div class="firsttype">
+            <h1>li:first-child & li:first-letter && li:first-line</h1>
+            <h2>This selector selects and style first li elements of its parent</h2>
+            <ul class="childselector">
+                <li>fisrt child<br>second line of first child</li>
+                <li>second child <br>second line of second child</li>
+                <li>third child <br>second line of third child</li>
+                <li>fourth child <br>second line of fourth child</li>
+            </ul>
+            <h2>p:fisrt-of-type selector</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore unde blanditiis dolore quia! Qui, fuga aut delectus nam rerum est sed vel quas quia modi illum, unde libero et!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro inventore unde blanditiis dolore quia! Qui, fuga aut delectus nam rerum est sed vel quas quia modi illum, unde libero et!</p>
+
+        </div>
+    </body>
+</html>
+

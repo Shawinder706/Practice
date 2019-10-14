@@ -1,0 +1,98 @@
+Document (individual elements combined to form an entire HTML page)
+
+
+*Doctype: <!DOCTYPE html>
+ 	Required as the first line of an HTML document (historical artifact).
+	
+	The <!DOCTYPE> declaration is not an HTML tag; it is an instruction to
+	the web browser about what version of HTML the page is written in.
+
+
+? Root Element: <html>
+	? Follows the "doctype" and wraps around all content on the entire page.
+
+
+
+? Head Element: <head>
+	? Container for things that do not appear as viewable content (e.g., keywords and
+	descriptions that will appear in search results, CSS, character set declarations,
+	etc.).
+
+
+
+? Character Set: <meta charset="UTF-8">
+	? Allows document to use "utf-8" character set, which includes most characters
+	from all known human languages (nests within head element).
+	 UTF stands for Unicode Transformation Format. The '8' means it uses 8-bit blocks to represent a character.
+
+
+
+? Title: <title>
+	? Sets the title that appears in browser tab (nests within head element).
+	? Also appears as the search result in Google.
+
+
+
+? Body: <body>
+	? Contains all of the content that will be shown to the viewer.
+
+
+
+ Elements (content + opening/closing tags)
+	? Block Elements form a visible block on a page (e.g., paragraphs, lists, navigation menus,
+	footers, etc.):
+	? Paragraph: <p>
+	? Divider: <hr>
+	? Headings: <h1> through <h6>
+
+
+
+o NOTE: As a general rule, try to have only one <h1> tag in your HTML
+document, and it should be the biggest text element on the page.
+
+
+
+? Generic Container: <div>
+	
+
+
+? Lists (each item within a type of list needs to be identified by the "<li>" tag):
+		
+		o Ordered Lists (lists that are numbered): <ol>
+		o Unordered Lists (lists composed of bullet points: <ul>
+
+
+
+
+? Tables: <table>
+	o Table Row: <tr>
+		o Table Header (consists of one cell within a row): <th>
+		? Should be nested within <thead> under main table (semantics).
+		o Table Data (consists of one cell within a row): <td>
+		? Should be nested within <tbody> under main table (semantics).
+		o Borders can be added by entering <table border="1">, although this is
+		discouraged, as CSS should be used for styling.
+
+
+
+
+? Forms (interactive controls to submit information to a web server): 
+	<form>
+		o Typically contain the "action" (the URL to send form data to) and
+		"method" (the type of HTTP request, such as "GET" to receive
+		information from the server and "POST" to add information to the serve)
+		attributes, e.g.:
+		<form action="/my-form-submitting-page" method="POST">
+		o Input (used to accept data from the user): <input>
+
+
+
+? The operation of <input> depends upon its type attribute. For a
+complete list of attributes, view Form Input Types. Examples:
+	<input
+		? Text (can be used for user names): type="text"
+		? Password: type="password"
+		? Placeholder (temporary text in input fields; used with
+	         "text" and "password" attributes): placeholder="insert-text-here"
+	</input>
+

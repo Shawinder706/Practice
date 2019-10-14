@@ -1,0 +1,264 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Website</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <style>
+        .navbar{
+            background-color: rgb(64, 64, 233);
+        }
+        .nav-link{
+            color: whitesmoke;
+        }
+        .header{
+            position: relative;
+            background-image: url('images/1.jpg');
+            height: 400px;
+            background-position: center;
+        }
+        .header .container-fluid{
+            position: absolute;
+            top: 200px;
+            left: 70px;
+            color: royalblue;
+        }
+        .header h4, h1{
+            text-align: center;
+        }
+        .overlay{
+            position: absolute;
+            min-height: 100%;
+            min-width:100%;
+            left: 0;
+            top: 0;
+            background: rgb(244, 244, 244, 0.79)
+        }
+        .about h2, p{
+            text-align: center;
+            color: rgb(20, 20, 20)
+        }
+        .pqr{
+            background-color: whitesmoke;
+        }
+        .xyz{
+            background-color: orangered;
+        }
+        .abc{
+            background-color: green;
+        }
+        .def{
+            background-color: aqua;
+        }
+        .features h2,p{
+            text-align: center;
+            color: black;
+        }
+        .dform{
+            text-align: center;
+        }
+        .footer{
+            position: relative;
+            top: 30px;
+            background-color: blueviolet;
+            height: 200px;
+        }
+        .adjust{
+            position: absolute;
+            top: 100px;
+            left: 480px;
+            color: azure;
+        }
+        .hr{
+            width: 30%;
+            color: teal;
+        }
+        .icon{
+            position: absolute;
+            top: 50px;
+            left: 600px;
+            color: aliceblue;
+        }
+        img{
+            width:100%;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbar-SupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>   
+        </button>
+
+        <i class="fas fa-infinity"></i>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-4">
+                <li class="nav-item"><a class="nav-link" data-value="Home" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" data-value="About" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" data-value="Blog" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" data-value="Shop" href="#">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" data-value="Dropdown" href="#">Dropdown</a></li>
+                <li class="nav-item"><a class="nav-link" data-value="Contact" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="overlay"></div>
+        <div class="container-fluid">
+            <h1>Bootstrap 4 Project for Exceedance!</h1>
+            <h4>want to learn Bootstrap 4?</h4>
+        </div>
+    </header>
+    <p></p>
+
+    <div class="about">
+        <div class="container-fluid">
+            <hr class="hr"> 
+            <h2>About Bootstrap 4 alpha</h2>
+            <hr class="hr">
+            <p>Bootstrap is a free front-end framework for faster and easier web development Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+                    Bootstrap also gives you the ability to easily create responsive designs
+                    on the august 19 Bootstrap 4 was realesed with the removal of IE8 .Of course,there are still aplha but there are many beta but this will give glimps 
+                        of next versions</p>
+        </div>
+    </div>
+
+        <div class="post-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-lg-3">
+                        <div class="card">
+                            <img src="images/2.jpg" alt="image not available" class="img-fluid">
+                        </div>
+                        <div class="card-body pqr">
+                            <h4 class="card-title">Post Title</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti et iste quos fugit nobis totam quis aliquid nulla quam beatae ullam repellendus sint harum, odio at eveniet sequi voluptatem sunt!</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link">Learn more</a>
+                        </div>
+                    </div>               
+                    <div class="col-md-3 col-sm-3 col-lg-3">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/2.jpg" alt="image not available" class="img-fluid">
+                            </div>
+                            <div class="card-body xyz">
+                                <h4 class="card-title"> Post title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti et iste quos fugit nobis totam quis aliquid nulla quam beatae ullam repellendus sint harum, odio at eveniet sequi voluptatem sunt!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="" class="card-link">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-lg-3">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/2.jpg" alt="image not available" class="img-fluid">
+                            </div>
+                            <div class="card-body abc">
+                                <h4 class="card-title">Post title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti et iste quos fugit nobis totam quis aliquid nulla quam beatae ullam repellendus sint harum, odio at eveniet sequi voluptatem sunt!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="images/2.jpg" class="card-link">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sol-sm-3 col-md-3 col-lg-3">
+                        <div class="card">
+                            <div class="card-img">
+                                <img src="images/2.jpg"image not available" class="img-fluid">
+                            </div>
+                            <div class="card-body def">
+                                <h4 class="card-title">Post title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti et iste quos fugit nobis totam quis aliquid nulla quam beatae ullam repellendus sint harum, odio at eveniet sequi voluptatem sunt!</p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="" class="card-link" >learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <p></p>
+        <div class="features">
+            <div class="container-fluid">
+                <hr class="hr">
+                <h2>Enhanced features</h2> 
+                <hr class="hr">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi at illo quasi ut dolorem. Vitae quibusdam cumque inventore, enim, quas, assumenda nesciunt nihil veritatis magnam sint maxime dicta placeat exercitationem?</p>
+            </div>
+            <div class="tables">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/2.jpg" alt="image not available" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-lg-6">
+                            <div class="card">
+                                <div class="card-img">
+                                    <img src="images/2.jpg" alt="image not availble" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="contact">
+            <div class="container">
+                <p></p>
+                <div class="dform">
+                    <hr class="hr">
+                    <h3>CONTACT US</h3>
+                    <hr class="hr">
+                    <h6>Feel free to reach out for any question!</h6>
+                </div>
+                <form action="">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm12 right">
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Your name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-lg" placeholder="Email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-lg" placeholder="Message" name="message">
+                            </div>
+                            <input type="submit" class="btn btn-secondary btn block" value="submit" name="submit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="icon">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-pinterest-square"></i>
+            </div>
+            <h6 class="adjust">2018 XCEEDENCE TRAINING AND PROJECT</h6>
+        </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex box</title>
+    <style>
+        html{
+            font-family: sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        header{
+            background: purple;
+            height: 100px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+            line-height: 100px;
+            margin: 0;
+        }
+        article{
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+            width: 400px;
+        }
+        section{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        /* article:nth-of-type(1)
+        {
+            order: 3
+        } */
+    </style>
+</head>
+<body>
+    <header>sample flexbox </header>
+    <section>
+        <article>
+            <h2>first article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam excepturi adipisci suscipit consequatur quos alias atque eius distinctio. Similique, nesciunt. Ipsam quasi possimus laudantium similique nobis tempore commodi sunt quam!</p>
+        </article>
+
+        <article>
+            <h2>second article</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio accusantium deleniti saepe fuga ea perferendis, numquam, vitae id, veritatis consectetur est voluptatem dolorum iure. Recusandae mollitia delectus enim accusamus eligendi.</p>
+        </article>
+
+        <!-- <article>
+            <h2>third article</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis saepe, ipsam earum asperiores harum vero fugit maxime nostrum architecto error, sequi culpa voluptatibus consequatur blanditiis magnam inventore sit non quasi.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam deleniti soluta perferendis ea! Enim, quibusdam incidunt ducimus quasi iure aliquam aspernatur deleniti repellendus accusantium facilis rerum quia eligendi suscipit ut.</p>
+        </article> -->
+
+        <!-- <article>
+            <h2>fourth article</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis saepe, ipsam earum asperiores harum vero fugit maxime nostrum architecto error, sequi culpa voluptatibus consequatur blanditiis magnam inventore sit non quasi.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam deleniti soluta perferendis ea! Enim, quibusdam incidunt ducimus quasi iure aliquam aspernatur deleniti repellendus accusantium facilis rerum quia eligendi suscipit ut.</p>
+        </article>
+
+        <article>
+            <h2>fifth article</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis saepe, ipsam earum asperiores harum vero fugit maxime nostrum architecto error, sequi culpa voluptatibus consequatur blanditiis magnam inventore sit non quasi.</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam deleniti soluta perferendis ea! Enim, quibusdam incidunt ducimus quasi iure aliquam aspernatur deleniti repellendus accusantium facilis rerum quia eligendi suscipit ut.</p>
+        </article> -->
+
+    </section>
+</body>
+</html>

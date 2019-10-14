@@ -1,0 +1,71 @@
+
+/* gloabl styling */
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family:  "DaimlerCS-Regular",Helvetica,Arial,sans-serif;
+}
+
+/* header styling */
+nav {
+    float: right;
+    padding: 59px 48px 35px 0px;
+}
+.logo-txt,.logo-img {
+    float: left;
+}
+/* main content */
+header {
+    background: linear-gradient(to right,#000 0,#000 40%,rgba(0,0,0,0.6) 60%);
+    float: left;
+    width: 100%;
+}
+.main-image img{
+    width: 100%;
+}
+nav a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 20px;
+}
+nav a:hover {
+    color: #00adef;
+}
+.logo-img {
+    padding: 0px 0px 0px 43px;
+}
+.logo-txt {
+    padding: 36px 40px 1px 54px;
+}
+.logo-img-wrap{
+    float: left;
+    padding: 20px 20px 14px 20px;
+}
+.vehicle-heading {
+    padding: 50px 120px;
+}
+.model-tabs li {
+    float: left;
+    margin-left: 34px;
+    list-style-type: none;
+    border-right: 1px solid;
+    padding-right: 12px;
+    font-size: 19px;
+    cursor: pointer;
+}
+.model-tabs li:first-child {
+    margin-left: 0px;
+}
+.model-tabs li:last-child {
+    border-right: none;
+}
+.model-tabs {
+    margin-top: 30px;
+}
+.vehicle-heading h2 {
+    font-size: 28px;
+}

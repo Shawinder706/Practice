@@ -1,0 +1,58 @@
+.content{
+    margin: 30vh auto;
+}
+
+.box, .box_one, .box_two, .box_three, .box_four, .box_five, .box_six{
+    animation-name: example;
+    animation-duration: 5s;
+    margin: 0 auto;
+    border-radius: 5px;
+    animation-iteration-count: infinite;
+}
+.box{
+    height: 2vh;
+    width: 2vh;
+    background-color: yellow;
+} 
+.box_one{
+    height: 4vh;
+    width: 4vh;
+    background-color:gold;
+} 
+.box_two{
+    height: 6vh;
+    width: 6vh;
+    background-color: aqua;
+} 
+.box_three{
+    height: 8vh;
+    width: 8vh;
+    background-color: violet;
+}
+.box_four{
+    height: 10vh;
+    width: 10vh;
+    background-color: navajowhite;
+}
+.box_five{
+    height: 12vh;
+    width: 12vh;
+    background-color: blueviolet;
+}
+.box_six{
+    height: 14vh;
+    width: 14vh;
+    background-color: darkgreen;
+}
+.content {
+    border-bottom: 10px solid red;
+}
+@keyframes example {
+    0% {background-color: green;}
+    17% {background-color: yellow;}
+    34% {background-color: blue;}
+    51% {background-color: gray;}
+    68% {background-color: navy;}
+    85% {background-color: paleturquoise;}
+    100% {background-color: orchid;}
+  } 
